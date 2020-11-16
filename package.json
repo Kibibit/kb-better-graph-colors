@@ -1,7 +1,7 @@
 {
   "name": "@kibibit/kb-better-graph-colors",
   "version": "0.0.0-development",
-  "description": "A better palette for the histroy graphs and bars",
+  "description": "A better color palette for the histroy graphs and bars",
   "homepage": "https://github.com/Kibibit/kb-better-graph-colors#readme",
   "files": [
     "INFO.md",

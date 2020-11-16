@@ -1,89 +1,43 @@
 <p align="center">
-  <a href="https://github.com/Kibibit/hass-kibibit-theme/" target="blank"><img src="https://thatkookooguy.github.io/https-assets/hassio-theme-logo.png" width="200" alt="achievibit Logo" />
+  <a href="https://github.com/Kibibit/kb-better-graph-colors/" target="blank"><img src="https://thatkookooguy.github.io/https-assets/screenshots/kb-better-graph-colors-logo.png" width="200" alt="achievibit Logo" />
   </a>
   <h2 align="center">
-    @kibibit/hass-kibibit-theme
+    @kibibit/kb-better-graph-colors
   </h2>
 </p>
 <p align="center">
-  <a href="https://github.com/custom-components/hacs"><img src="https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge"></a>
-  <a href="https://imgur.com/gallery/SQJNbWb"><img src="https://img.shields.io/badge/Screenshots-Click_Here-ff3860.svg?style=for-the-badge"></a>
+  <a href="https://www.npmjs.com/package/@kibibit/kb-better-graph-colors"><img src="https://img.shields.io/npm/v/@kibibit/kb-better-graph-colors/latest.svg?style=for-the-badge&logo=npm&color=CB3837"></a>
 </p>
 <p align="center">
-  Will this show?!
+  <a href="https://github.com/custom-components/hacs"><img src="https://img.shields.io/badge/HACS-Default-orange.svg"></a>
+</p>
+<p align="center">
+  A better color palette for the HA histroy graphs and bars
 </p>
 <hr>
 
-This is based on [Henrik](https://www.reddit.com/user/Trollet_/)'s [reddit post](https://www.reddit.com/r/homeassistant/comments/c4s28m/my_current_lovelace_ui_constructive_feedback_is/) with a few additions of mine
-
-## Screenshots
-![Theme - Overview](https://thatkookooguy.github.io/https-assets/dashboard-example.png)
-![Theme - mobile](https://thatkookooguy.github.io/https-assets/mobile.png)
-
-[more screenshots](https://imgur.com/gallery/SQJNbWb)
-
 ## Installation
-
-### Prerequisites
-
-Add the following code to your `configuration.yaml` file (reboot required).
-
-```yaml
-frontend:
-  ... # your configuration.
-  themes: !include_dir_merge_named themes
-  ... # your configuration.
-```
-
-### Add the font
-Right now, this theme requires you to add the `Comfortaa` font as a resource to your lovelace configuration:
-```yaml
-resources:
-  - url: https://fonts.googleapis.com/css?family=Comfortaa&display=swap
-  type: css
-```
-
 ### HACS
 
 1. Go to the Community Store.
-2. Search for `kibibit`.
-3. Navigate to `kibibit` theme.
-4. Press `Install`.
-6. Go to services and trigger the `frontend.reload_themes` service.
+2. Select `Frontend`.
+3. Click on the `+` button
+4. Search for `kibibit Better Graph Colors`.
+5. Click on it.
+6. Press `Install this Repository in HACs`.
+7. When prompted, reload the frontend
 
-### Change the background
+### Manual Installation
 
-This theme comes with a background by default, but you can change it to whatever you like.
+1. Create a folder named `kb-better-graph-colors` in your `config/www` folder.
+2. Copy the file `kb-better-graph-colors.js` into that folder.
+3. In HA GUI, go to `Configuration` => `Lovelace Dashboards` => `Resources`, and click the `+` button to add a resource.
+4. A popup will open. In the url field, fill in `/local/kb-better-graph-colors/kb-better-graph-colors.js`, and select `JavaScript Module` in the dropdown.
+5. Refresh the Home Assistant Frontend.
 
-You can use either a url or a local file.
-
-1. Find a background you like (You can fetch the original one from [HERE](https://thatkookooguy.github.io/https-assets/bg-kibibit-theme.png))
-2. If it's a local image, put the background image inside `/config/www` to make it a public asset accessible from the frontend (`/config/www/bg-kibibit-theme.png`).
-
-access the theme file `kibibit.yaml` and change the following line:
-
-```yaml
-background-image: "center / cover no-repeat fixed url('https://thatkookooguy.github.io/https-assets/bg-kibibit-theme.png')"
-```
-
-to include your url, or a local asset by mapping `/config/www/` to `/local/` (`/local/bg-kibibit-theme.png`)
-
-Refresh home assistant after that.
-
-### Setting the default `backend-selected` theme
-In order to have this theme set automatically as the backend selected default, add the following automation to your home assistant:
-```yaml
-- alias: Set Default Theme
-  description: ''
-  trigger:
-  - event: start
-    platform: homeassistant
-  condition: []
-  action:
-  - data:
-      name: kibibit
-    service: frontend.set_theme
-```
+## How does it look?
+![](https://thatkookooguy.github.io/https-assets/screenshots/kb-better-graph-colors-example.png)
+![](https://thatkookooguy.github.io/https-assets/screenshots/kb-better-graph-colors-example2.png)
 
 ## Stay in touch
 
