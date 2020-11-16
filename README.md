@@ -10,7 +10,7 @@
   <a href="https://imgur.com/gallery/SQJNbWb"><img src="https://img.shields.io/badge/Screenshots-Click_Here-ff3860.svg?style=for-the-badge"></a>
 </p>
 <p align="center">
-  A milky glass theme for Home Assistant
+  Will this show?!
 </p>
 <hr>
 
