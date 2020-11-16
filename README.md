@@ -15,6 +15,10 @@
   A better color palette for the HA histroy graphs and bars
 </p>
 <hr>
+<img src="https://thatkookooguy.github.io/https-assets/hassio-theme-logo.png" width=150>
+
+Created for the Home Assistant [kibibit Theme](https://github.com/kibibit/hass-kibibit-theme)
+> It have transparent card background colors, support multiple backgrounds, and custom local backgrounds
 
 ## Installation
 ### HACS
