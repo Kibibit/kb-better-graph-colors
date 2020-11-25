@@ -60,8 +60,7 @@ const COLOR_SET = [
   "a04a9b",
 ];
 
-Promise.resolve()
-  .then(() => customElements.whenDefined("ha-chart-base"))
+customElements.whenDefined("ha-chart-base")
   .then(() => {
     const HaChartBase = customElements.get("ha-chart-base");
 
