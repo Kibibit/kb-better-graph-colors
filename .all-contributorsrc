@@ -1,6 +1,6 @@
 {
   "projectName": "kb-better-graph-colors",
-  "projectOwner": "kibibit",
+  "projectOwner": "Kibibit",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -23,7 +23,17 @@
         "infra",
         "maintenance"
       ]
+    },
+    {
+      "login": "acshef",
+      "name": "acshef",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9013284?v=4",
+      "profile": "https://github.com/acshef",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
